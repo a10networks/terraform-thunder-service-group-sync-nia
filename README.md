@@ -10,14 +10,14 @@ Using this Terraform module in conjunction with **consul-terraform-sync** enable
 This module supports the following:
 * Create, update and delete Service Group members based on service attributes for that service in Consul catalog. If the service address is not defined in Consul catalog, the node address is used instead.
 
-If there is a missing feature or a bug - - [open an issue (to be updated) ](https://github.com/dcallao/terraform-thunder-consul-sync-nia/issues/new)
+If there is a missing feature or a bug - - [open an issue (to be updated) ](https://github.com/a10networks/terraform-thunder-service-group-sync-nia/issues/new)
 
 ## What is consul-terraform-sync?
 
 The **consul-terraform-sync** runs as a daemon that enables a **publisher-subscriber** paradigm between **Consul** and **ACOS** based devices to support **Network Infrastructure Automation (NIA)**. 
 
 <p align="left">
-<img width="800" src="/images/consul-terraform-sync-arch.png"> </a>
+<img width="800" src="https://github.com/a10networks/terraform-thunder-service-group-sync-nia/blob/main/images/consul-terraform-sync-arch.png"> </a>
 </p>
 
 * consul-terraform-sync **subscribes to updates from the Consul catalog** and executes one or more automation **"tasks"** with appropriate value of *service variables* based on those updates. **consul-terraform-sync** leverages [Terraform](https://www.terraform.io/) as the underlying automation tool and utilizes the Terraform provider ecosystem to drive relevant change to the network infrastructure. 
