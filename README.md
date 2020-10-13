@@ -10,7 +10,7 @@ Using this Terraform module in conjunction with **consul-terraform-sync** enable
 This module supports the following:
 * Create, update and delete Service Group members based on service attributes for that service in Consul catalog. If the service address is not defined in Consul catalog, the node address is used instead.
 
-If there is a missing feature or a bug - - [open an issue (to be updated) ](https://github.com/a10networks/terraform-thunder-service-group-sync-nia/issues/new)
+If there is a missing feature or a bug - - [open an issue](https://github.com/a10networks/terraform-thunder-service-group-sync-nia/issues/new)
 
 ## What is consul-terraform-sync?
 
