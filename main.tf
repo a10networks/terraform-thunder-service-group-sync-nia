@@ -2,7 +2,7 @@ terraform {
   required_providers {
     thunder = {
       source = "a10networks/thunder"
-      version = "0.4.7"
+      version = "0.4.14"
     }
   }
   required_version = "~> 0.13"
