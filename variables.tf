@@ -24,5 +24,5 @@ variable "services" {
 variable "slb_service_group_protocol" {
   description = "Protocol of the Consul services in service group"
   type    = string
-  default = "udp"
+  default = "tcp"
 }
