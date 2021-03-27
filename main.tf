@@ -27,7 +27,7 @@ resource "thunder_service_group" "service-group" {
 
 locals {
   service_ids = transpose({
-      for id, s in var.services : id => [s.name]
+      for id, s in var.services : id => [s.name] if s.status != "critical"
   })
   grouped = {
     for name, ids in local.service_ids : name => [for id in ids : var.services[id]]
