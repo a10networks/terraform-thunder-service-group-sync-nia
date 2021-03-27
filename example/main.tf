@@ -9,7 +9,7 @@ terraform {
 }
 
 
-provider "thunder" {
+terraform_provider "thunder" {
   address  = var.thunder_host
   username = var.thunder_user
   password = var.thunder_passd

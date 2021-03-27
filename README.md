@@ -160,7 +160,7 @@ If a task and is defined, one or more services are associated with the task, pro
           }
 
 
-          provider "thunder" {
+          terraform_provider "thunder" {
             address  = var.thunder_host
             username = var.thunder_user
             password = var.thunder_passd
