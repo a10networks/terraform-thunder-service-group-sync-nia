@@ -17,12 +17,13 @@ variable "services" {
       node_datacenter       = string
       node_tagged_addresses = map(string)
       node_meta             = map(string)
+      cts_user_defined_meta = map(string)
     })
   )
 }
 
 variable "slb_service_group_protocol" {
   description = "Protocol of the Consul services in service group"
-  type    = string
-  default = "tcp"
+  type        = string
+  default     = "tcp"
 }
